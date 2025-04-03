@@ -5,7 +5,8 @@ import plotly.express as px
 
 # Читаем API-ключ из Streamlit Secrets
 API_KEY = st.secrets["coinmarketcap"]["api_key"]
-URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
+#URL = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
+URL = "https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
 HEADERS = {"X-CMC_PRO_API_KEY": API_KEY}
 
 def get_crypto_data():
